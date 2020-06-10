@@ -45,23 +45,33 @@ bb35319010 江下 翔
 
 1.40:繰り返されるたびにNの値が１だけ増えるようにする。
 
-1.41:定義したより分散を出す。
+1.41:定義したより標本分散を出す。
 
-1.42:定義したより平均を出す。
+1.42:定義したより標本平均を出す。
 
 1.43:二乗の平均をave_onlineを用いて導き出す。
 
-1.47:不偏分散を平均を用いて表す。
+1.52:母集団平均（推定値）を出す。
 
-1.54:平均aveを出力する。
+1.54:標本平均aveを出力する。
 
-1.55:分散varを出力する。
+1.55:標本分散varを出力する。
 
-1.56:不偏分散unvarを出力する。
+1.56:母集団平均aveを出力する。（母集団の平均の推定値は，標本の平均より）
+
+1.57:母集団分散varMを出力する。
 
 ## 出力
 
+PS C:\Users\bb35319010\Desktop\2020psp2\k01> gcc -o k01 k01.c -W -Wall
+PS C:\Users\bb35319010\Desktop\2020psp2\k01> ./k01
+input the filename of sample:c:\Users\bb35319010\Desktop\2020psp2\sample\heights_male.csv
+the filename of sample: c:\Users\bb35319010\Desktop\2020psp2\sample\heights_male.csv
 
+ave=173.888750
+var=25.361711
+est ave=173.888750
+est var=28.984812
 
 ## 修正履歴
 

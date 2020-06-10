@@ -19,7 +19,7 @@ int main(void)
     char buf[256];
     int N=0;
     double ave=0;
-    double var,square_ave,unvar; 
+    double var,square_ave,varM; 
     FILE* fp;
     
 
@@ -43,18 +43,19 @@ int main(void)
         square_ave = ave_online(pow(val,2),square_ave,N);
        
     }
-       
-    unvar=N*var/(N-1);
 
     if(fclose(fp) == EOF){
         fputs("file close error\n",stderr);
         exit(EXIT_FAILURE);
     }
+    
+    varM=N*var/(N-1);
 
     printf("ave=%lf\n",ave);
     printf("var=%lf\n",var);
-    printf("unvar=%lf\n",unvar);
-   
+    printf("est ave=%lf\n",ave);
+    printf("est var=%lf\n",varM);
+
     return 0;
 
 }
