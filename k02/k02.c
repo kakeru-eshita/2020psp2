@@ -5,12 +5,13 @@
 #include <math.h>
 
 extern double p_stdnorm(double z); 
-extern double max_val();
-extern double min_val();
 
 int main(void)
 {
+    double z;
     double val;
+    double var_a, var_b;
+    double mu_a, mu_b;
     char fname[FILENAME_MAX];
     char buf[256];
     FILE* fp;
@@ -30,10 +31,11 @@ int main(void)
     while(fgets(buf,sizeof(buf),fp) != NULL){
         sscanf(buf,"%lf",&val);
 
-    p_stdnorm(a, ){
+    z=(val - mu_a)/var_a;
+    L1 = p_stdnorm(z) * L1;
 
-
-
+    z=(val - mu_b)/var_b;
+    L2 = p_stdnorm(z) * L2;
     }
 
     if(fclose(fp) == EOF){
@@ -41,8 +43,8 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
-    printf("L_A: %f\n",max_val);
-    printf("L_B: %f\n",min_val);
+    printf("L_A: %f\n",L1);
+    printf("L_B: %f\n",L2);
 
     return 0;
 
@@ -52,14 +54,4 @@ int main(void)
 double p_stdnorm(double z)
 {
     return 1/sqrt(2*M_PI) * exp(-z*z/2);
-}
-
-double max_val()
-{
-    return ;
-}
-
-double min_val()
-{
-    return ;
 }
