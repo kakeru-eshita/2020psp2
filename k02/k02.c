@@ -4,7 +4,7 @@
 #define _USE_MATH_DEFINES
 #include <math.h>
 
-extern double p_stdnorm(double z); 
+extern double p_stdnorm(double z);
 
 int main(void)
 {
@@ -47,8 +47,6 @@ int main(void)
     printf("L_B: %f\n",L2);
 
     return 0;
-
-
 }
 
 double p_stdnorm(double z)
