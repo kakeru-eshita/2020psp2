@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define _USE_MATH_DEFINES
 #include <math.h>
 
-extern double p_stdnorm(double z);
+extern double p_stdnorm(double z); 
+extern double max_val();
+extern double min_val();
 
 int main(void)
 {
@@ -27,8 +30,7 @@ int main(void)
     while(fgets(buf,sizeof(buf),fp) != NULL){
         sscanf(buf,"%lf",&val);
 
-
-    
+    p_stdnorm(a, ){
 
 
 
@@ -52,3 +54,12 @@ double p_stdnorm(double z)
     return 1/sqrt(2*M_PI) * exp(-z*z/2);
 }
 
+double max_val()
+{
+    return ;
+}
+
+double min_val()
+{
+    return ;
+}
