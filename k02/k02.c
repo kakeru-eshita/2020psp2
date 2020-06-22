@@ -10,8 +10,8 @@ int main(void)
 {
     double z;
     double val;
-    double var_a, var_b;
-    double mu_a, mu_b;
+    double var_a=5.43, var_b=5.5;
+    double mu_a=170.8, mu_b=169.7;
     char fname[FILENAME_MAX];
     char buf[256];
     FILE* fp;
