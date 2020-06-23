@@ -31,11 +31,11 @@ int main(void)
     while(fgets(buf,sizeof(buf),fp) != NULL){
         sscanf(buf,"%lf",&val);
 
-    z=(val - mu_a)/var_a;
-    L1 = p_stdnorm(z) * L1;
+        z=(val - mu_a)/var_a;
+        L1 = p_stdnorm(z) * L1;
 
-    z=(val - mu_b)/var_b;
-    L2 = p_stdnorm(z) * L2;
+        z=(val - mu_b)/var_b;
+        L2 = p_stdnorm(z) * L2;
     }
 
     if(fclose(fp) == EOF){
