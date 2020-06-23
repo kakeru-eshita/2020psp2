@@ -14,7 +14,7 @@ int main(void)
     double mu_a=170.8, mu_b=169.7;
     char fname[FILENAME_MAX];
     char buf[256];
-    FILE* fp;
+    FILE *fp;
     double L1=1,L2=1;
 
     printf("input the filename of sample:");
