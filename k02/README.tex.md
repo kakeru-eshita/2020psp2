@@ -36,5 +36,12 @@ $$
 
 35.38.尤度を求めるための式を書く
 
+## 入出力結果
+
+```
+Likelihood for A：
+Likelihood for B：
+```
+
 ## 修正履歴
 
