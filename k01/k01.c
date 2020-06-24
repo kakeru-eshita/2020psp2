@@ -52,9 +52,10 @@ int main(void)
     return 0;
 }
 
-    double ave_online(double val,double ave, int N){
+double ave_online(double val,double ave, int N){
     return (((N-1)*ave/N)+(val/N));
-    }
-    double var_online(double val,double ave, double square_ave, int N){
+}
+
+double var_online(double val,double ave, double square_ave, int N){
     return (((N-1)*square_ave/N)+pow(val,2)/N)-pow((((N-1)*ave/N)+(val/N)),2);
-    }
+}
