@@ -22,7 +22,9 @@ int main(int argc, char* argv[])
 
 
 
-
+    sscanf(argv[argc-3],"%lf",&mu);
+    sscanf(argv[argc-2],"%lf",&sigma);
+    sscanf(argv[argc-1],"%d",&num_dummy);
 
     printf("============================================\n");
     printf("template mean: %4.1lf\n",mu);
@@ -31,10 +33,11 @@ int main(int argc, char* argv[])
     printf("============================================\n");
 
     srand(RAND_SEED);
-    for(  ){
+    for(i=0; i<=4; i++){
         /* r_stdnormを使って，1人のデータを捏造 */
-        dummy =   ;
+        dummy = r_stdnorm() * sigma + mu;
         printf("%5.2lf\n",dummy);
+
     }
 
     return EXIT_SUCCESS;
