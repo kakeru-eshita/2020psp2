@@ -76,7 +76,7 @@ int main(int argc, char* argv[])
 
 38.標準化の式z=(x-mu)/sigmaをx=z*sigma+muの形に変形し、
    x=dummy, z=r_stdnorm()を使う。
-   
+
 ## 入出力結果
 
 以下は例です． コンパイルするときに`-DCONST_SEED`をつけるとこうなります．
@@ -102,11 +102,11 @@ template mean: 170.8
 template standard deviation: 5.43
 Num of dummy data: 5
 ============================================
-162.20
-171.29
-175.88
-168.59
-166.74
+166.76
+165.57
+181.14
+174.92
+173.43
 
 
 ## 修正履歴
