@@ -20,7 +20,10 @@ int main(int argc, char* argv[])
     int i;
     double dummy;
 
-
+    if(argc != 4){
+    printf("引数の数が正しくありません");    
+    exit(EXIT_FAILURE);
+    }
 
     sscanf(argv[1],"%lf",&mu);
     sscanf(argv[2],"%lf",&sigma);
@@ -38,10 +41,6 @@ int main(int argc, char* argv[])
         dummy = r_stdnorm() * sigma + mu;
         printf("%5.2lf\n",dummy);
 
-    }
-
-    if(argc != 4){
-    exit(EXIT_FAILURE);
     }
 
     return EXIT_SUCCESS;
