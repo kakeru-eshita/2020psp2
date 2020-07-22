@@ -120,3 +120,6 @@ Num of dummy data: 5
 
 [comment #20200716]
 - OKです
+
+[comment #20200716 sonoda]
+- 課題3の完了を確認しました．
