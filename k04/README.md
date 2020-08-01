@@ -17,19 +17,21 @@ bb35319010 江下　翔
 
 35.ファイルが空の場合エラーを出して終了
 
-40-49.構造体に中身を格納していく
+40.heights.csvの一行目を読みだす
 
-51-58.ファイルが終了次第エラーを出してファイルを閉じる
+41-51.構造体に中身を格納していく
 
-61.IDを聞く
+53-60.ファイルが終了次第エラーを出してファイルを閉じる
 
-65.入力した学籍番号と一致した場合表示する
+62.IDを聞く
+
+66.入力した学籍番号と一致した場合表示する
 
 68.genderの欄が１であったらMale、違ったらFemaleと表示する
 
-75.jを１試行ごとに１ずつ足していく
+76.jを１試行ごとに１ずつ足していく
 
-78.データがなく試行が行われない場合はデータがないとみなし「No data」と表示する
+78.探しているデータが見つからないときは「Not found data」と表示する
 ## 入出力結果
 
 例えば，ID 45313125のデータを調べたいとき，
@@ -44,6 +46,15 @@ gender : Female
 height : 152.4
 ```
 
+PS C:\Users\bb35319010\Desktop\2020psp2\k04> ./k04
+input the filename of sample height :c:\Users\bb35319010\Desktop\2020psp2\sample\heights.csv
+input the filename of sample ID :c:\Users\bb35319010\Desktop\2020psp2\sample\IDs.csv
+Which ID's data do you want?:45313002
+ID : 45313002
+gender : Male
+height : 183.9
+
+
 例えば，ID 45313124のデータを調べたいとき，
 
 ```
@@ -53,6 +64,13 @@ Which ID's data do you want? : 45313124
 ---
 No data
 ```
+
+
+PS C:\Users\bb35319010\Desktop\2020psp2\k04> ./k04
+input the filename of sample height :c:\Users\bb35319010\Desktop\2020psp2\sample\heights.csv
+input the filename of sample ID :c:\Users\bb35319010\Desktop\2020psp2\sample\IDs.csv
+Which ID's data do you want?:1
+Not found data
 
 ## 修正履歴
 
