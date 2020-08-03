@@ -38,15 +38,6 @@ bb3531910 江下　翔
 例えば，ID 45313125のデータを調べたいとき，
 
 ```
-Input the filename of sample height : ../sample/heights.csv
-Input the filename of sample ID : ../sample/IDs.csv
-Which ID's data do you want? : 45313125
----
-ID : 45313125
-gender : Female
-height : 152.4
-```
-
 PS C:\Users\bb35319010\Desktop\2020psp2\k04> ./k04
 input the filename of sample height :c:\Users\bb35319010\Desktop\2020psp2\sample\heights.csv
 input the filename of sample ID :c:\Users\bb35319010\Desktop\2020psp2\sample\IDs.csv
@@ -54,23 +45,17 @@ Which ID's data do you want?:45313002
 ID : 45313002
 gender : Male
 height : 183.9
-
+```
 
 例えば，ID 45313124のデータを調べたいとき，
 
 ```
-Input the filename of sample height : ../sample/heights.csv
-Input the filename of sample ID : ../sample/IDs.csv
-Which ID's data do you want? : 45313124
----
-No data
-```
-
 PS C:\Users\bb35319010\Desktop\2020psp2\k04> ./k04
 input the filename of sample height :c:\Users\bb35319010\Desktop\2020psp2\sample\heights.csv
 input the filename of sample ID :c:\Users\bb35319010\Desktop\2020psp2\sample\IDs.csv
 Which ID's data do you want?:1
 Not found data
+```
 
 ## 修正履歴
 [comment #20200722]
@@ -85,3 +70,6 @@ Not found data
 以下の項目は結果には直接関わらない修正点ですが, 修正してください. 
 - fp==NULL のときのエラーメッセージですが `No data` は相応しくないと思います. 
 - ID_NUM に 14 という数字を入れているので for文のところでも ID_NUM を使いましょう. 
+
+[comment #20200804 sonoda]
+- OKです．課題4の完了を確認しました
